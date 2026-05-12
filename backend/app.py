@@ -1,6 +1,7 @@
 import os
 from fastapi import FastAPI
 from pydantic import BaseModel
+from dotenv import load_dotenv
 from fastapi.middleware.cors import CORSMiddleware
 import joblib
 import pandas as pd
@@ -17,7 +18,8 @@ app.add_middleware(
     allow_headers=["*"], # Izinkan semua jenis header
 )
 
-
+load_dotenv()
+api_key = os.getenv("GROQ_API_KEY")
 # 1. Load Model, Scaler, dan Features
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
