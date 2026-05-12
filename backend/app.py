@@ -37,7 +37,7 @@ with open("models/feature_cols.txt", "r") as f:
     feature_cols = f.read().splitlines()
 
 # 2. Setup Koneksi ke Groq & ChromaDB (RAG)
-GROQ_API_KEY = "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" # <--- ISI API KEY KAMU DI SINI
+GROQ_API_KEY = os.getenv("GROQ_API_KEY") # <--- ISI API KEY KAMU DI SINI
 groq_client = Groq(api_key=GROQ_API_KEY)
 
 # Membuka database ChromaDB lokal yang baru saja dibuat
