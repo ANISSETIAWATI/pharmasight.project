@@ -1,0 +1,40 @@
+
+FEATURE IMPORTANCE – RANDOM FOREST (PJK-GM016)
+===============================================
+
+Berdasarkan hasil pelatihan model Random Forest, berikut urutan
+fitur yang paling berpengaruh terhadap prediksi defect:
+
+TOP 5 FITUR PALING PENTING:
+1. Kemas_Pct_Teoritis  (0.4565) ← DOMINAN, ~45.6% pengaruh total
+2. Kemas_Durasi_Hari   (0.1488) ← Durasi pengemasan
+3. Cetak_Pct_Teoritis  (0.0696) ← Persen teoritis pencetakan
+4. GB_Yield_Total      (0.0690) ← Yield granulasi basah
+5. GK_Yield_Total      (0.0579) ← Yield granulasi kering
+
+FITUR LAINNYA (kontribusi lebih kecil):
+6.  Cetak_Yield_Kg     (0.0433)
+7.  Rasio_GK_GB        (0.0427)
+8.  GB_Kadar_Air_Mean  (0.0400)
+9.  Kemas_Mesin_enc    (0.0210)
+10. Cetak_Durasi_Hari  (0.0170)
+11. Bulan_Produksi     (0.0163)
+12. Cetak_Mesin_enc    (0.0113)
+13. GB_Mesin_L1_enc    (0.0056)
+14. Total_Waste_Kg     (0.0009)
+
+IMPLIKASI OPERASIONAL:
+- Kemas_Pct_Teoritis adalah indikator utama kualitas batch.
+  Nilai > 1.0 menandakan efisiensi di atas teori (anomali).
+  Nilai < 0.95 menandakan loss signifikan.
+- Kemas_Durasi_Hari yang terlalu panjang (>2 hari) berkorelasi
+  dengan peningkatan risiko defect.
+- Pemantauan ketat pada proses pengemasan (Kemas) lebih kritikal
+  dibanding proses sebelumnya (Granulasi, Cetak).
+
+PERFORMA MODEL:
+- Random Forest Default: F1-Score = 0.800
+- Random Forest Tuned  : F1-Score = 0.800  
+- ROC-AUC              : 1.000
+- 5-Fold CV Mean F1    : 0.880
+- Isolation Forest     : F1-Score = 0.000 (tidak efektif untuk dataset ini)

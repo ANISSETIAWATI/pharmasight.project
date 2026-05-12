@@ -1,0 +1,61 @@
+PROFIL KLASTER K-MEANS (K=3) – HASIL ANALISIS CLUSTERING
+============================================================
+
+KLASTER 0 – Medium Risk (defect ~2.0%)
+  Jumlah batch: 198
+  Karakteristik rata-rata:
+    - GB_Yield_Total: 623.346
+    - GK_Yield_Total: 965.593
+    - Rasio_GK_GB: 1.568
+    - GB_Kadar_Air_Mean: 3.724
+    - Cetak_Yield_Kg: 935.253
+    - Cetak_Pct_Teoritis: 0.967
+    - Kemas_Pct_Teoritis: 0.969
+    - Total_Waste_Kg: 0.000
+    - Cetak_Durasi_Hari: 0.566
+    - Kemas_Durasi_Hari: 1.106
+    - Bulan_Produksi: 4.995
+
+KLASTER 1 – Low Risk (defect ~0.0%)
+  Jumlah batch: 2
+  Karakteristik rata-rata:
+    - GB_Yield_Total: 427.445
+    - GK_Yield_Total: 920.825
+    - Rasio_GK_GB: 2.154
+    - GB_Kadar_Air_Mean: 5.470
+    - Cetak_Yield_Kg: 732.500
+    - Cetak_Pct_Teoritis: 2.907
+    - Kemas_Pct_Teoritis: 2.857
+    - Total_Waste_Kg: 0.000
+    - Cetak_Durasi_Hari: 1.000
+    - Kemas_Durasi_Hari: 0.500
+    - Bulan_Produksi: 6.000
+
+KLASTER 2 – High Risk (defect ~2.9%)
+  Jumlah batch: 420
+  Karakteristik rata-rata:
+    - GB_Yield_Total: 601.094
+    - GK_Yield_Total: 351.624
+    - Rasio_GK_GB: 0.641
+    - GB_Kadar_Air_Mean: 4.732
+    - Cetak_Yield_Kg: 766.998
+    - Cetak_Pct_Teoritis: 0.971
+    - Kemas_Pct_Teoritis: 0.960
+    - Total_Waste_Kg: 11.278
+    - Cetak_Durasi_Hari: 0.748
+    - Kemas_Durasi_Hari: 2.071
+    - Bulan_Produksi: 4.719
+
+
+INTERPRETASI KLASTER:
+- Klaster 0 (Medium Risk): Batch dengan volume GB tinggi, 
+  kadar air rendah (~3.7%), persen teoritis rendah (~0.97). 
+  Risiko defect sedang, perlu monitoring pada Kemas_Pct_Teoritis.
+
+- Klaster 1 (Low Risk): Batch dengan Rasio_GK_GB tertinggi (2.15),
+  kadar air tertinggi (~5.5%), persen teoritis cetak/kemas tinggi (~2.9).
+  Hampir tidak ada defect, produksi berjalan optimal.
+
+- Klaster 2 (High Risk): Batch dengan volume GK kecil (351 kg),
+  total waste tertinggi (~11.3 kg), durasi kemas paling lama (~2 hari).
+  Defect rate tertinggi. Waspadai batch pada klaster ini.

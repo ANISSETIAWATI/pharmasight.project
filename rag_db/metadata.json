@@ -1,0 +1,13 @@
+{
+  "total_documents": 158,
+  "total_chunks": 174,
+  "embedding_model": "intfloat/multilingual-e5-base",
+  "rag_db_dir": "./rag_db",
+  "kb_dir": "./knowledge_base",
+  "files_generated": [
+    "01_eda_summary.txt",
+    "02_cluster_profile.txt",
+    "03_feature_importance.txt",
+    "04_domain_knowledge.txt"
+  ]
+}

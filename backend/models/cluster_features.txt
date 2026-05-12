@@ -1,0 +1,11 @@
+GB_Yield_Total
+GK_Yield_Total
+Rasio_GK_GB
+GB_Kadar_Air_Mean
+Cetak_Yield_Kg
+Cetak_Pct_Teoritis
+Kemas_Pct_Teoritis
+Total_Waste_Kg
+Cetak_Durasi_Hari
+Kemas_Durasi_Hari
+Bulan_Produksi
