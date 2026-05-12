@@ -1,0 +1,62 @@
+# ================================================================
+#  requirements.txt – PJK-GM016
+#  Updated: April 2026 (tambahan RAG + LLM)
+# ================================================================
+
+# ── Data & ML (existing) ─────────────────────────────────────
+pandas>=1.5
+numpy>=1.23
+scikit-learn>=1.1
+matplotlib>=3.6
+seaborn>=0.12
+joblib>=1.2
+plotly>=5.13
+openpyxl>=3.0
+imbalanced-learn>=0.10
+
+# ── Dashboard ─────────────────────────────────────────────────
+streamlit>=1.30
+fastapi>=0.110
+uvicorn>=0.27
+pydantic>=2.0
+
+# ── RAG – Core ────────────────────────────────────────────────
+langchain>=0.2
+langchain-community>=0.2
+langchain-core>=0.2
+
+# ── Vector Store ─────────────────────────────────────────────
+chromadb>=0.5
+faiss-cpu>=1.8
+
+# ── Embeddings (lokal, gratis) ───────────────────────────────
+sentence-transformers>=3.0
+torch>=2.0                   # diperlukan oleh sentence-transformers
+transformers>=4.40
+
+# ── LLM Provider (uncomment sesuai pilihan) ──────────────────
+
+# PILIHAN 1: Anthropic Claude (rekomendasi)
+langchain-anthropic>=0.1
+anthropic>=0.25
+
+# PILIHAN 2: OpenAI GPT-4o
+# langchain-openai>=0.1
+# openai>=1.30
+
+# PILIHAN 3: Ollama (lokal, gratis, privasi terjaga)
+# langchain-ollama>=0.1
+# ollama>=0.2
+
+# ── PDF Loader (untuk dokumen SOP) ───────────────────────────
+pypdf>=4.0
+pymupdf>=1.24               # untuk PDF yang lebih kompleks
+
+# ── Utils ─────────────────────────────────────────────────────
+python-dotenv>=1.0          # untuk load .env file
+tqdm>=4.66                  # progress bar saat build embedding
+requests>=2.31
+
+# ── Groq (✅ GRATIS – provider default) ──────────────────────
+langchain-groq>=0.1
+groq>=0.9

@@ -1,0 +1,25 @@
+
+RINGKASAN DATASET PRODUKSI FARMASI – PJK-GM016
+===============================================
+
+STATISTIK UMUM:
+- Total batch produksi: 662
+- Defect rate keseluruhan: 7.25%
+- Batch normal: 614 (92.75%)
+- Batch defect: 48 (7.25%)
+
+STATISTIK FITUR UTAMA (rata-rata):
+- GB_Yield_Total rata-rata    : 607.75 kg
+- GK_Yield_Total rata-rata    : 538.25 kg
+- Rasio_GK_GB rata-rata       : 0.925
+- GB_Kadar_Air_Mean rata-rata : 4.41%
+- Cetak_Pct_Teoritis rata-rata: 0.958
+- Kemas_Pct_Teoritis rata-rata: 0.938
+- Total_Waste_Kg rata-rata    : 7.24 kg
+
+TOP 5 MATERIAL DENGAN DEFECT RATE TERTINGGI:
+  - SUDREX COLD & COUGH/KAP 10'S SLEEVE: 33.3%
+  - BODREX FLU & BATUK PE/4'S: 11.2%
+  - BODREX MIGRA / 4 KAPLET: 11.2%
+  - APC PLUS TABLET/20E NF NG: 10.5%
+  - BODREX EXTRA KAPLET/4'S: 9.0%
